@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+}
+
+.sad-face {
+    width: 50px;
+    height: 50px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: rgb(26, 26, 27);
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.brand {
+    text-align: center;
+    font-size: 7rem;
+    color: #53ff1a;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 2px #004d00, 1px 2px 20px #ccffee, 0 0 10px #99ffcc;
+}
+
+.brand-tag {
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #ffff33;
+    margin-bottom: 50px;
+    margin-left: 120px;
+}
+
+form {
+    width: 100%;
+    max-width: 800px;
+    min-height: fit-content;
+    margin: 30px auto;
+    background-color: #53ff1a;
+    border-radius: 25px;
+}
+
+form:hover {
+    box-shadow: 7px 8px 4px rgb(153, 204, 255, 0.5);
+}
+
+form input {
+    width: 90%;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    outline: none;
+    background-color: #aaff80;
+    display: inline-block;
+    padding: 20px;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+form ion-icon {
+    display: inline-block;
+    font-size: 4rem;
+    width: 9%;
+    margin-bottom: -9px;
+    color: #001a33;
+}
+
+#content {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1.5fr));
+    grid-gap: 25px;
+}
+
+
+/* #no-data {
+    font-style: italic;
+    text-align: center;
+    font-size: 3rem;
+    color: #ff1a1a;
+} */
+
+.recipe {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #66ff33;
+    background-color: #000d1a;
+    overflow: hidden;
+}
+
+.recipe:hover {
+    background-color: #6699cc;
+    box-shadow: 7px 7px 5px #888888;
+}
+
+.recipe:hover+.flex-container {
+    color: #001a00;
+}
+
+.recipe img {
+    width: 100%;
+    height: 300px;
+    border-radius: 40%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #66ff33;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#content .recipe-title {
+    color: #66ff33;
+    margin: 25px 10px 0 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.recipe-info {
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    padding: 10px 5px;
+    background-color: #88ff4d;
+    color: #001a00;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 410px;
+    align-self: flex-start;
+}
+
+.recipe-info:hover {
+    background-color: #00b300;
+}
+
+.recipe-data {
+    color: #ccff66;
+    margin-top: 10px;
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+}
+
+@media (max-width: 800px) {
+    .container.initial form {
+        max-width: 500px;
+    }
+    .container.initial form input {
+        padding: 15px;
+        font-size: 2rem;
+    }
+    .search-result {
+        grid-gap: 15px;
+    }
+    .container.initial .brand {
+        font-size: 4rem;
+    }
+}
